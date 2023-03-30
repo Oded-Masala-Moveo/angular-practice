@@ -12,7 +12,7 @@ import { AccountsService } from '../accounts.service';
 export class NewAccountComponent {
 
   constructor(private loggingService: LoggingService,
-              private accountsService: AccountsService) {
+    private accountsService: AccountsService) {
     this.accountsService.statusUpdated.subscribe(
       (status: string) => alert('New Status: ' + status)
     );
